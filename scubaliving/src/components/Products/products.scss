@@ -1,0 +1,169 @@
+.shop {
+    margin: 2% 4%;
+
+    h1 {
+        width: 100%;
+        color: white;
+        background: linear-gradient(90deg,
+                rgb(39, 39, 39) 0%,
+                rgba(39, 39, 39, 1) 50%,
+                rgba(213, 213, 213, 1) 50%,
+                rgba(213, 213, 213, 1) 100%);
+        height: 5vh;
+        padding-left: 5rem;
+        font-size: 1.8em;
+        line-height: 5vh;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        color: black;
+        margin-bottom: 3rem;
+        font-size: 2em;
+
+    }
+
+    .products-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        img {
+            width: 100%;
+            padding: 15%;
+        }
+    }
+
+    .products-items {
+        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.24);
+        width: 24rem;
+        text-align: center;
+
+        figcaption {
+            font-size: 1.5em;
+            color: grey;
+        }
+
+        p {
+            font-size: 2.5em;
+        }
+    }
+
+
+
+}
+
+
+/* Smartphones  ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .shop {
+        margin-top: 8rem;
+
+        .products-container {
+            display: block;
+        }
+
+        .products-items {
+            margin-left: 3rem;
+            width: 72rem;
+            text-align: center;
+
+            figcaption {
+                font-size: 4.2em;
+                color: grey;
+            }
+
+            p {
+                font-size: 3em;
+            }
+        }
+
+        h2 {
+            margin-top: 2rem;
+            color: black;
+            margin-bottom: 3rem;
+            width: 80rem;
+            font-size: 3.8em;
+
+        }
+
+        h1 {
+            padding: 0;
+            width: 75.6rem;
+            background: linear-gradient(90deg,
+                    rgb(0, 0, 0) 0%,
+                    rgb(0, 0, 0) 50%,
+                    rgb(0, 0, 0) 50%,
+                    rgb(0, 0, 0) 100%);
+            height: 12vh;
+            font-size: 2.8em;
+            line-height: 12vh;
+            text-align: center;
+        }
+
+    }
+
+
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 200px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .shop {
+        margin-top: 5rem;
+
+        .products-container {
+            display: block;
+        }
+
+        .products-items {
+            margin-left: 3rem;
+            width: 85rem;
+            text-align: center;
+
+            figcaption {
+                font-size: 4.2em;
+                color: grey;
+            }
+
+            p {
+                font-size: 3em;
+            }
+        }
+
+        h2 {
+            margin-top: 2rem;
+            color: black;
+            margin-bottom: 3rem;
+            width: 86rem;
+            font-size: 5em;
+
+        }
+
+        h1 {
+            padding: 0;
+            width: 85rem;
+            background: linear-gradient(90deg,
+                    rgb(0, 0, 0) 0%,
+                    rgb(0, 0, 0) 50%,
+                    rgb(0, 0, 0) 50%,
+                    rgb(0, 0, 0) 100%);
+            height: 12vh;
+            font-size: 4em;
+            line-height: 12vh;
+            text-align: center;
+        }
+
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {}

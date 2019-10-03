@@ -1,0 +1,69 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    height: 30vh;
+    padding-top: 4rem;
+
+    .footer-title {
+        font-size: 1.3em;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+    }
+}
+
+/* Smartphones  ----------- */
+@media only screen and (min-device-width : 200px) and (max-device-width : 480px) {
+    .footer {
+        width: 80rem;
+        height: 195vh;
+        display: block;
+
+        .footer-title {
+            font-size: 4em;
+            font-weight: 500;
+            margin-left: 2rem;
+        }
+
+        li {
+            font-size: 3em;
+            margin-left: 2rem;
+        }
+    }
+
+
+}
+
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .footer {
+        width: 91rem;
+        height: 195vh;
+        display: block;
+
+        .footer-title {
+            font-size: 4em;
+            font-weight: 500;
+            margin-left: 2rem;
+        }
+
+        li {
+            font-size: 3em;
+            margin-left: 2rem;
+        }
+    }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {}

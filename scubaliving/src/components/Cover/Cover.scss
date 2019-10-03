@@ -1,0 +1,105 @@
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    img {
+        height: 80vh;
+        min-width: 100%;
+        display: block;
+    }
+
+
+    .absolute {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        background-color: rgba(221, 221, 221, 0.637);
+        min-width: 50%;
+        min-height: 17vh;
+        text-align: center;
+    }
+
+    .title {
+        min-width: 50%;
+        margin-top: 2.6rem;
+        font-weight: 500;
+        font-size: 2em;
+    }
+
+    .under_title {
+        min-width: 50%;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 450px) {
+    .container-fluid {
+        margin-top: 8rem;
+
+        img {
+            width: 80rem;
+        }
+
+        .absolute {
+            width: 55rem;
+            top: 50%;
+            right: -86%;
+
+            .title {
+                font-size: 3em;
+                font-weight: 700;
+            }
+
+            .under_title {
+                font-size: 2.5em;
+                font-weight: 700;
+                padding-bottom: 1rem;
+            }
+        }
+
+
+    }
+}
+
+
+
+/* iPads  ----------- */
+@media only screen and (min-device-width : 200px) and (max-device-width : 1024px) {
+    .container-fluid {
+        margin-top: 8rem;
+
+        img {
+            width: 89rem;
+        }
+
+        .absolute {
+            width: 85rem;
+            top: 50%;
+            left: -186%;
+
+            .title {
+                font-size: 3em;
+                font-weight: 700;
+            }
+
+            .under_title {
+                font-size: 2.5em;
+                font-weight: 700;
+                padding-bottom: 1rem;
+            }
+        }
+
+
+    }
+}
+
+
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {}

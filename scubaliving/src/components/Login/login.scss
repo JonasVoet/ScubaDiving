@@ -1,0 +1,141 @@
+.box {
+    background-color: rgb(190, 187, 187);
+    text-align: center;
+    display: flex;
+    margin-bottom: 1.3rem;
+    position: relative;
+    height: 3.3vh;
+
+    i {
+        position: absolute;
+        padding: 4.6%;
+        color: white;
+        right: 100%;
+        background-color: black;
+        font-size: 1.4em;
+    }
+
+    a {
+
+        padding-right: 2rem;
+        line-height: 3.3vh;
+        padding-left: 0.5rem;
+    }
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: rgb(0, 0, 0);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: rgb(0, 0, 0);
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.content {
+    input {
+        margin-right: 0.3rem;
+    }
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+hr {
+    border: 1px solid #ffffff;
+    margin-bottom: 2px;
+}
+
+/* Smartphones  ----------- */
+@media only screen and (min-device-width : 200px) and (max-device-width : 480px) {
+
+    .box {
+        margin-left: 10rem;
+        height: 5vh;
+        background-color: rgba(190, 187, 187, 0);
+        font-size: 1.5em;
+
+        i {
+            display: none;
+        }
+
+    }
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .box {
+        margin-left: 10rem;
+        height: 5vh;
+        background-color: rgba(190, 187, 187, 0);
+        font-size: 1.5em;
+
+        i {
+            display: none;
+        }
+
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {}

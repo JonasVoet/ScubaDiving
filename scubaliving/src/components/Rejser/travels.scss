@@ -1,0 +1,177 @@
+.travel-container {
+    margin: 2% 4%;
+
+
+    h2 {
+        width: 100%;
+        color: white;
+        background: linear-gradient(90deg,
+                rgb(39, 39, 39) 0%,
+                rgba(39, 39, 39, 1) 50%,
+                rgba(213, 213, 213, 1) 50%,
+                rgba(213, 213, 213, 1) 100%);
+        min-height: 5vh;
+        padding-left: 5rem;
+        font-size: 1.8em;
+        line-height: 5vh;
+    }
+
+    h3 {
+        font-size: 2em;
+        color: black;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .item-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .travel-items {
+        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.24);
+        width: 53rem;
+    }
+
+    .travel-items:nth-child(2) {
+        margin-top: 0.20rem;
+    }
+
+    img {
+        width: 100%;
+        padding: 5%;
+
+    }
+
+    .travel-text {
+        color: white;
+        background-color: black;
+        min-height: 19vh;
+        padding-left: 2.5rem;
+        padding-top: 2rem;
+        font-family: 'Oswald',
+            sans-serif;
+        letter-spacing: 0.2rem;
+
+    }
+
+    .title {
+        font-size: 2.1em;
+        font-weight: 500;
+    }
+
+    .under_title {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 2.1em;
+    }
+
+
+}
+
+/* Smartphones  ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .travel-container {
+        margin: 0;
+
+        .item-container {
+            display: block;
+
+        }
+
+        .travel-items {
+            width: 75rem;
+        }
+
+        .travel-text {
+            font-size: 2.5em;
+            padding-bottom: 2rem;
+        }
+
+        h2 {
+            padding: 0;
+            width: 75.6rem;
+            background: linear-gradient(90deg,
+                    rgb(0, 0, 0) 0%,
+                    rgb(0, 0, 0) 50%,
+                    rgb(0, 0, 0) 50%,
+                    rgb(0, 0, 0) 100%);
+            height: 12vh;
+            font-size: 2.8em;
+            line-height: 12vh;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 4em;
+            width: 75rem;
+        }
+
+
+    }
+
+
+
+
+
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 200px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .travel-container {
+        margin: 0;
+
+        .item-container {
+            display: block;
+
+        }
+
+        .travel-items {
+            width: 89rem;
+        }
+
+        .travel-text {
+            font-size: 3em;
+            padding-bottom: 2rem;
+        }
+
+        h2 {
+            padding: 0;
+            width: 91rem;
+            background: linear-gradient(90deg,
+                    rgb(0, 0, 0) 0%,
+                    rgb(0, 0, 0) 50%,
+                    rgb(0, 0, 0) 50%,
+                    rgb(0, 0, 0) 100%);
+            height: 12vh;
+            font-size: 4em;
+            line-height: 12vh;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 5em;
+            width: 89rem;
+        }
+
+
+
+
+    }
+
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {}
